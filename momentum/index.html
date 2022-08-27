@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link rel="stylesheet" href="./css/owfont-regular.css">
+  <link rel="stylesheet" href="./css/style.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script type="module" src="./js/index.js" defer></script>
+</head>
+
+<body>
+  <div class="wrapper">
+    <header class="header">
+      <div class="header-container">
+        <div class="music transition">
+          <div class="music-container">
+            <div class="volume-title">
+              <div class="music-title"></div>
+              <div class="volume-container">
+                <div class="volume-slider">
+                  <div class="volume-percentage"></div>
+                </div>
+                <div class="volume-button">
+                  <div class="volume icono-volume"></div>
+                </div>
+              </div>
+            </div>
+            <div class="timeline">
+              <div class="progress"></div>
+            </div>
+            <div class="timer">
+              <div class="current">0:00</div>
+              <div class="length"></div>
+            </div>
+            <div class="buttons">
+              <button class="btn-prev btn-play"></button>
+              <button class="button"></button>
+              <button class="btn-next btn-play"></button>
+            </div>
+          </div>
+          <ul class="play-list"></ul>
+        </div>
+        <div class="weather transition">
+          <input class="city" type="text" value="Minsk">
+          <i class="weather-icon owf"></i>
+          <div class="discription">
+            <span class="temperature"></span>
+            <span class="weather-description"></span>
+          </div>
+          <span class="wind-speed"></span>
+          <span class="humidity"></span>
+        </div>
+      </div>
+    </header>
+    <main class="main">
+      <div class="container">
+        <div class="clock">
+          <time class="time transition"></time>
+          <time class="date transition"></time>
+        </div>
+        <div class="hello transition">
+          <span class="day-time"></span>
+          <input class="input" type="text" placeholder="">
+        </div>
+        <div class="left-arrow">
+          <button class="btn-left btn"> <img src="./image/svg/slider-prev.svg" alt="icon"></button>
+        </div>
+        <div class="right-arrow">
+          <button class="btn-right btn"><img src="./image/svg/slider-next.svg" alt="icon"></button>
+        </div>
+      </div>
+    </main>
+    <footer class="footer">
+      <div class="quoters-block">
+        <button class="footer-button"></button>
+        <div class="quoters">
+          <div class="quoters-text"></div>
+          <div class="quoters-author"></div>
+        </div>
+      </div>
+      <div class="burger-icon transition">ToDo</div>
+      <div class="pop-up transition">
+        <div class="pop-up__container">
+          <div class="pop-up__main">
+            <ul class="pop-up__list"></ul>
+          </div>
+          <div class="pop-up__footer">
+            <input class="pop-up__input" type="text" placeholder="New Todo">
+          </div>
+        </div>
+      </div>
+      <div class="todo transition"></div>
+      <div class="burger-todo transition">
+        <div class="burger-todo__container">
+          <div class="column-left">
+            <ul class="menu__list">
+              <li class="menu__item menu__item-choose one">General</li>
+              <li class="menu__item two">API photos</li>
+              <li class="menu__item three">Language</li>
+            </ul>
+          </div>
+          <div class="column-right">
+            <h2 class="title">General</h2>
+            <p class="title__under">customize your dashboard</p>
+            <p class="column-right__text text">Show</p>
+            <ul class="column-right__row">
+              <li class="text">Clock
+                <label class="switch">
+                  <input class="checkbox" type="checkbox" checked>
+                  <span class="slider"></span>
+                </label>
+              </li>
+              <li class="text">Date
+                <label class="switch">
+                  <input class="checkbox" type="checkbox" checked>
+                  <span class="slider"></span>
+                </label>
+              </li>
+              <li class="text">Greeding
+                <label class="switch">
+                  <input class="checkbox" type="checkbox" checked>
+                  <span class="slider"></span>
+                </label>
+              </li>
+              <li class="text">Quoters
+                <label class="switch">
+                  <input class="checkbox" type="checkbox" checked>
+                  <span class="slider"></span>
+                </label>
+              </li>
+              <li class="text">Music
+                <label class="switch">
+                  <input class="checkbox" type="checkbox" checked>
+                  <span class="slider"></span>
+                </label>
+              </li>
+              <li class="text">Weather
+                <label class="switch">
+                  <input class="checkbox" type="checkbox" checked>
+                  <span class="slider"></span>
+                </label>
+              </li>
+            </ul>
+            <ul class="column-right__row display">
+              <li class="text">Rolling Scopes
+                <label class="switch">
+                  <input class="checkbox" type="radio" name="photos" value="rolling" checked>
+                  <span class="slider"></span>
+                </label>
+              </li>
+              <li class="text">Unsplash API
+                <label class="switch">
+                  <input class="checkbox" type="radio" name="photos" value="Unsplash">
+                  <span class="slider"></span>
+                </label>
+              </li>
+              <li class="text">Flickr API
+                <label class="switch">
+                  <input class="checkbox" type="radio" name="photos" value="Flickr">
+                  <span class="slider"></span>
+                </label>
+              </li>
+            </ul>
+            <ul class="column-right__row display">
+              <li class="text">English
+                <label class="switch english">
+                  <input class="checkbox" type="radio" name="lang" value="en" checked>
+                  <span class="slider"></span>
+                </label>
+              </li>
+              <li class="text">Russian
+                <label class="switch russian">
+                  <input class="checkbox" type="radio" name="lang" value="ru">
+                  <span class="slider"></span>
+                </label>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+</body>
+
+</html>
