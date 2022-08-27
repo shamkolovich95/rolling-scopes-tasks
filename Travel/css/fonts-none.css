@@ -1,0 +1,142 @@
+ @font-face {
+   font-family: 'RedHatText';
+   src: url('../fonts/RedHatText-Medium.eot');
+   src: local('☺'), url('../fonts/RedHatText-Medium.woff') format('woff'), url('../fonts/RedHatText-Medium.ttf') format('truetype'), url('../fonts/RedHatText-Medium.svg') format('svg');
+   font-weight: 500;
+   font-style: normal;
+ }
+
+
+ @font-face {
+   font-family: 'RedHatText';
+   src: url('../fonts/RedHatText-Bold.eot');
+   src: local('☺'), url('../fonts/RedHatText-Bold.woff') format('woff'), url('../fonts/RedHatText-Bold.ttf') format('truetype'), url('../fonts/RedHatText-Bold.svg') format('svg');
+   font-weight: 700;
+   font-style: normal;
+ }
+
+ @font-face {
+   font-family: 'RedHatText';
+   src: url('../fonts/RedHatText-Regular.eot');
+   src: local('☺'), url('../fonts/RedHatText-Regular.woff') format('woff'), url('../fonts/RedHatText-Regular.ttf') format('truetype'), url('../fonts/RedHatText-Regular.svg') format('svg');
+   font-weight: normal;
+   font-style: normal;
+ }
+
+ @font-face {
+   font-family: 'Aleo';
+   src: url('../fonts/Aleo-Bold.eot');
+   src: local('☺'), url('../fonts/Aleo-Bold.woff') format('woff'), url('../fonts/Aleo-Bold.ttf') format('truetype'), url('../fonts/Aleo-Bold.svg') format('svg');
+   font-weight: 700;
+   font-style: normal;
+ }
+
+ @font-face {
+   font-family: 'Aleo';
+   src: url('../fonts/Aleo-Italic.eot');
+   src: local('☺'), url('../fonts/Aleo-Italic.woff') format('woff'), url('../fonts/Aleo-Italic.ttf') format('truetype'), url('../fonts/Aleo-Italic.svg') format('svg');
+   font-weight: normal;
+   font-style: italic;
+ }
+
+ @font-face {
+   font-family: 'Aleo';
+   src: url('../fonts/Aleo-Regular.eot');
+   src: local('☺'), url('../fonts/Aleo-Regular.woff') format('woff'), url('../fonts/Aleo-Regular.ttf') format('truetype'), url('../fonts/Aleo-Regular.svg') format('svg');
+   font-weight: normal;
+   font-style: normal;
+ }
+
+ @font-face {
+   font-family: 'Aleo';
+   src: url('../fonts/Aleo-BoldItalic.eot');
+   src: local('☺'), url('../fonts/Aleo-BoldItalic.woff') format('woff'), url('../fonts/Aleo-BoldItalic.ttf') format('truetype'), url('../fonts/Aleo-BoldItalic.svg') format('svg');
+   font-weight: 700;
+   font-style: italic;
+ }
+
+ @font-face {
+   font-family: 'Magra';
+   src: url('../fonts/Magra-Bold.eot');
+   src: local('☺'), url('../fonts/Magra-Bold.woff') format('woff'), url('../fonts/Magra-Bold.ttf') format('truetype'), url('../fonts/Magra-Bold.svg') format('svg');
+   font-weight: 700;
+   font-style: normal;
+ }
+
+ /*Обнуление*/
+ * {
+   padding: 0;
+   margin: 0;
+   border: 0;
+ }
+
+ *,
+ *:before,
+ *:after {
+   box-sizing: border-box;
+ }
+
+ :focus,
+ :active {
+   outline: none;
+ }
+
+ a:focus,
+ a:active {
+   outline: none;
+ }
+
+ nav,
+ footer,
+ header,
+ aside {
+   display: block;
+ }
+
+ html,
+ body {
+   height: 100%;
+   width: 100%;
+   font-size: 100%;
+   line-height: 1;
+   font-size: 14px;
+ }
+
+ input,
+ button,
+ textarea {
+   font-family: inherit;
+ }
+
+ button {
+   cursor: pointer;
+ }
+
+ a,
+ a:visited {
+   text-decoration: none;
+ }
+
+ a:hover {
+   text-decoration: none;
+ }
+
+ ul li {
+   list-style: none;
+ }
+
+ img {
+   vertical-align: top;
+ }
+
+ h1,
+ h2,
+ h3,
+ h4,
+ h5,
+ h6 {
+   font-size: inherit;
+   font-weight: 400;
+ }
+
+ /*--------------------*/

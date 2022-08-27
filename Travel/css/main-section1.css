@@ -1,0 +1,154 @@
+._ibj {
+  position: relative;
+}
+
+._ibj img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+/*? Section preview */
+
+.section-preview {
+  margin-bottom: 80px;
+}
+
+.section-block {
+  position: relative;
+}
+
+.section-block__background {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+}
+
+.section-block__container {}
+
+.section-block__container_body {
+  max-width: 892px;
+  padding: 122px 0 254px 120px;
+  box-sizing: content-box;
+}
+
+.section__title_white {
+  font-weight: 700;
+  font-size: 80px;
+  line-height: 96px;
+  color: white;
+  margin-bottom: 33px;
+}
+
+.section__text {
+  font-weight: 700;
+  font-style: italic;
+  font-size: 20px;
+  line-height: 24px;
+  color: white;
+  margin-bottom: 46px;
+}
+
+.section-form {
+  display: flex;
+  justify-content: space-between;
+  border-radius: 15px;
+  padding: 18px 18px 18px 41px;
+  background-color: rgba(255, 255, 255, 0.7);
+}
+
+.section-form__text {
+  display: inline-block;
+  font-style: italic;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 29px;
+  background-color: transparent;
+  color: rgba(242, 120, 92, 1);
+}
+
+input::placeholder {
+  color: rgba(242, 120, 92, 1);
+}
+
+.button {
+  color: white;
+  background-color: rgba(13, 96, 111, 1);
+  font-family: "RedHatText", sans-serif;
+  border-radius: 10px;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.button:hover {
+  animation: button-increase 400ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  opacity: 0.9;
+}
+
+@keyframes button-increase {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.05, 1.1);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+.section-form__button {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 32px;
+  padding: 13.5px 35px;
+  position: relative;
+  overflow: hidden;
+}
+
+.section-form__button::before {
+  content: '';
+  height: 100%;
+  width: 30px;
+  display: inline-block;
+  background-color: rgba(255, 255, 255, 0.7);
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: skewX(-45deg) translateX(-65px);
+}
+
+.section-form__button::before {
+  content: '';
+  animation: movi 6s linear infinite;
+}
+
+@keyframes movi {
+  0% {
+    transform: skewX(-45deg) translateX(-65px);
+  }
+
+  40% {
+    transform: skewX(-45deg) translateX(-65px);
+  }
+
+  45% {
+    transform: skewX(-45deg) translateX(300px);
+  }
+
+  100% {
+    transform: skewX(-45deg) translateX(300px)
+  }
+}
+
+.section-form__button:hover::before {
+  animation: none;
+}

@@ -1,0 +1,121 @@
+/*?SECTION3*/
+
+.section-destination {
+  margin-bottom: 80px;
+}
+
+.section-destination-slider {
+  overflow: hidden;
+  max-width: 1440px;
+}
+
+.section-destination-row {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.section-destination-images {
+  margin-bottom: 28px;
+  display: flex;
+  gap: 60px;
+}
+
+.section-destination__image_item {
+  overflow: hidden;
+  border-radius: 16px;
+  position: relative;
+  width: 100%;
+}
+
+.section-destination__image_item img:hover {
+  opacity: 0.7;
+  transition-duration: 500ms;
+  transform: scale(1.05);
+}
+
+.section-destination__image_text {
+  position: absolute;
+  bottom: 40px;
+  left: 15px;
+  color: white;
+  z-index: 1;
+  font-size: 32px;
+  line-height: 42px;
+  font-weight: 500;
+  font-family: 'RedHatText', sans-serif;
+}
+
+.section-destination-buttons {
+  margin-bottom: 40px;
+}
+
+.section-destination__button_lock {
+  height: 20px;
+  width: 20px;
+  background-color: rgba(242, 120, 92, 0.5);
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.section-destination__button_lock:last-child {
+  margin-right: 0px
+}
+
+.section-destination__button_lock:hover {
+  opacity: 0.9;
+}
+
+.unlock {
+  background-color: rgba(242, 120, 92, 1);
+}
+
+.section-destination-footer {
+  text-align: center;
+}
+
+.section-destination__button {
+  padding: 13.5px 31px 13.5px 31px;
+  box-shadow: 0px 0px 3px rgba(13, 96, 111, 0.08), 0px 2px 3px rgba(13, 96, 111, 0.16);
+}
+
+.button span {
+  background: url(../image/arrow.svg) left no-repeat;
+  padding-left: 50px;
+  font-family: 'RedHatText';
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 32px;
+}
+
+@keyframes right {
+  0% {
+    right: 0px;
+  }
+
+  100% {
+    right: 860px;
+  }
+}
+
+@keyframes left {
+  0% {
+    left: 0px;
+  }
+
+  100% {
+    left: 860px;
+  }
+}
+
+.animation-right {
+  position: relative;
+  right: 860px;
+  animation: right 600ms linear;
+}
+
+.animation-left {
+  position: relative;
+  left: 860px;
+  animation: left 600ms linear;
+}

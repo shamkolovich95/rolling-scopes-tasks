@@ -1,0 +1,163 @@
+/*?FOOTER*/
+
+.footer-container {
+  display: flex;
+  justify-content: flex-end;
+  padding: 13.5px 121px;
+  position: relative;
+  background-color: transparent;
+}
+
+.footer__text {
+  align-self: center;
+  font-family: 'RedHatText';
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 21px;
+  margin-right: 328px;
+  color: white;
+}
+
+.footer-icons {
+  display: flex;
+}
+
+.footer-icons li {
+  margin-right: 20px;
+}
+
+.footer-icons li:last-child {
+  margin-right: 0px;
+}
+
+.footer-icons_github {
+  position: relative;
+}
+
+.movi::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.footer-icons_github::before {
+  content: '';
+  background: url(../image/github.svg) 0 0 no-repeat;
+  width: 34px;
+  height: 34px;
+  background-size: 34px;
+  transform: scaleX(0);
+}
+
+.footer-icons_github:hover:before {
+  animation: github-two 300ms linear 300ms forwards;
+}
+
+.footer-icons_github:hover .footer__items {
+  animation: github-one 300ms linear forwards;
+}
+
+@keyframes github-one {
+  0% {
+    transform: scaleX(1);
+  }
+
+  100% {
+    transform: scaleX(0);
+  }
+}
+
+@keyframes github-two {
+  0% {
+    transform: scaleX(0);
+  }
+
+  100% {
+    transform: scaleX(1);
+  }
+}
+
+.footer-icons_youtube {
+  position: relative;
+  overflow: hidden;
+}
+
+.footer-icons_youtube::before {
+  content: '';
+  background: url(../image/rs-school.svg);
+  width: 34px;
+  height: 34px;
+  background-size: 34px;
+  transform: translate(0%, -110%);
+}
+
+@keyframes youtube-one {
+  0% {
+    transform: translate(0%, 0%);
+  }
+
+  100% {
+    transform: translate(0%, -110%);
+  }
+}
+
+.footer-icons_youtube:hover .footer__items_second {
+  animation: youtube-one 400ms linear forwards;
+}
+
+@keyframes youtube-two {
+  0% {
+    transform: translate(0%, -110%);
+  }
+
+  100% {
+    transform: translate(0%, 0%);
+  }
+}
+
+.footer-icons_youtube:hover:before {
+  animation: youtube-two 400ms linear 0.45s forwards;
+}
+
+.footer-icons_twiter {
+  position: relative;
+}
+
+.footer-icons_twiter::before {
+  content: '';
+  background: url(../image/twitter.svg);
+  width: 34px;
+  height: 34px;
+  background-size: 34px;
+  opacity: 0;
+}
+
+.footer-icons_twiter:hover:before {
+  content: '';
+  animation: twitter-one 600ms ease-in forwards 500ms;
+}
+
+@keyframes twitter-one {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.footer-icons_twiter:hover .footer__items_thead {
+  animation: twitter-two 600ms linear forwards;
+}
+
+@keyframes twitter-two {
+  0% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}

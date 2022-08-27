@@ -1,0 +1,154 @@
+html {
+  scroll-behavior: smooth;
+}
+
+.wrapper {
+  max-width: 1440px;
+  margin: 0 auto;
+  font-family: 'Aleo', sans-serif;
+  position: relative;
+}
+
+.header-menu-burger,
+.accounts,
+.burger-x,
+.section__text_small_display,
+.section__left_img_back,
+.slider_adaption__image,
+.footer-container_background_back,
+.overlay,
+.icons-block {
+  display: none;
+}
+
+/*! Header */
+
+.header {
+  position: relative;
+}
+
+.header-menu {
+  display: flex;
+  flex-wrap: wrap;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 5;
+  font-family: "RedHatText", sans-serif;
+  color: white;
+  background-color: rgba(242, 120, 92, 0.7);
+  box-shadow: 0px 5px 4px rgba(0, 0, 0, 0.4);
+}
+
+.header-menu__title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 120px;
+}
+
+.header-menu__title_text {
+  padding: 25px 0px 25px 0px;
+  font-size: 32px;
+  line-height: 39px;
+  font-family: "Magra", sans-serif;
+  margin-left: 6px;
+}
+
+.header-menu__icon {
+  animation: rotate-icon 7s linear infinite;
+}
+
+@keyframes rotate-icon {
+  0% {
+    transform: rotate3d(0, 0, 0, 0deg);
+  }
+
+  90% {
+    transform: rotate3d(0, 0, 0, 0deg);
+  }
+
+  95% {
+    transform: rotate3d(0, 1, 0, 180deg);
+  }
+
+  100% {
+    transform: rotate3d(0, 1, 0, 360deg);
+  }
+}
+
+.header-menu__icon:hover {
+  animation-play-state: paused;
+}
+
+
+.header-menu__nav {
+  display: flex;
+  align-items: center;
+  margin-left: 168px;
+}
+
+.header-menu-list {
+  display: flex;
+  margin-right: 198px;
+}
+
+.header-menu-list__items {
+  margin-right: 42px;
+  font-size: 16px;
+  line-height: 21px;
+  position: relative;
+}
+
+.header-menu-list__items:last-child {
+  margin-right: 0;
+}
+
+.header-menu-list__items a {
+  color: white;
+  font-size: 16px;
+  line-height: 21px;
+  letter-spacing: 0.35px;
+}
+
+.header-menu-list__items::before {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  right: 0px;
+  height: 1px;
+  width: 0%;
+  transition: 300ms;
+  background-color: white;
+}
+
+.header-menu-list__items:hover::before {
+  width: 100%;
+  left: 0;
+}
+
+.header-menu-list__items:hover {
+  transform: scale(1.05);
+  display: inline-block;
+}
+
+.header-menu-login {
+  display: flex;
+  align-items: center;
+}
+
+.header-menu__button {
+  color: white;
+  background-color: rgba(13, 96, 111, 1);
+  font-family: "RedHatText", sans-serif;
+  border-radius: 10px;
+  font-size: 16px;
+  font-weight: 500;
+  padding: 11px 32.5px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 2px 3px rgba(13, 96, 111, 0.16);
+}
+
+.header-menu__button:hover {
+  transform: scale(0.9, 0.9);
+}
